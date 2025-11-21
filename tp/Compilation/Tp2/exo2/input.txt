@@ -1,0 +1,7 @@
+program main
+var x,y: real;
+a,b: integer;
+
+begin
+b:=b+x; x:=b+ ; c:=b;
+end.

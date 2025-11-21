@@ -1,0 +1,18 @@
+#ignore Flex/C build products
+lex.yy.c
+*.exe
+*.o
+*.obj
+
+#ignore output file(s)
+result.txt
+
+#VSCode project files 
+.vscode/
+*.log
+
+#OS/Editors
+.DS_Store
+Thumbs.db
+
+desktop.ini
