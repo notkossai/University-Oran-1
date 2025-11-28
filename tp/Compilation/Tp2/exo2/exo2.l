@@ -1,12 +1,10 @@
 %option yylineno
-%{
-    #include <stdio.h>
-%}
 
-keyword program|begin|end|var|integer|boolean|real
-ident {lettre}({lettre}|{number})*
 lettre [a-z]+
 number [0-9]+
+keyword program|begin|end|var|integer|boolean|real
+ident {lettre}({lettre}|{number})*
+cste {number}{number}*
 opr ":="|"+"
 sepr [:;]
 pgEnd "."
@@ -14,7 +12,7 @@ pgEnd "."
 %%
 {keyword} fprintf(yyout, "LINE: %d => KEYWORD: %s\n", yylineno, yytext);
 {ident} fprintf(yyout,"LINE: %d => IDENTIFIER: %s\n", yylineno, yytext);
-{number} fprintf (yyout,"LINE: %d => NUMBER: %s\n", yylineno, yytext);
+{cste} fprintf (yyout,"LINE: %d => CONSTANTE: %s\n", yylineno, yytext);
 {opr} fprintf(yyout,"LINE: %d => OPERATOR: %s\n", yylineno, yytext);
 {sepr} fprintf(yyout,"LINE: %d => SEPERATOR: %s\n", yylineno, yytext);
 {pgEnd} fprintf(yyout,"LINE: %d => PROGRAM END: %s\n", yylineno, yytext);

@@ -1,4 +1,4 @@
-program main
+Program main
 var x,y: real;
 a,b: integer;
 
