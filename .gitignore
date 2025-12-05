@@ -6,6 +6,7 @@ lex.yy.c
 
 #ignore output file(s)
 result.txt
+cResult.txt
 
 #VSCode project files 
 .vscode/
