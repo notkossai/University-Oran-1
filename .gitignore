@@ -1,8 +1,10 @@
-#ignore Flex/C build products
+#ignore Flex/Bison/C build products
 lex.yy.c
 *.exe
 *.o
 *.obj
+*.tab.c
+*.tab.h
 
 #ignore output file(s)
 result.txt
@@ -17,3 +19,8 @@ cResult.txt
 Thumbs.db
 
 desktop.ini
+
+#Other
+onWorkExo1
+onWorkExo3
+onWorkExo3(1)
