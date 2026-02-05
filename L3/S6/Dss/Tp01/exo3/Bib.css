@@ -1,0 +1,4 @@
+biblio { background-color: aqua; }
+livre { display:block; }
+titre { font-family:Arial; font-size: 16pt; font-weight: bold; color:red; }
+auteur { font-style: italic; font-size: 14pt; color:purple; }

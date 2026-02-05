@@ -1,0 +1,22 @@
+<?xml version= "1.0" encoding="utf-8" standalone="yes" ?>
+<?xml-stylesheet type="text/css" href="Bib.css"?>
+<!-- Élément racine -->
+<biblio>
+
+<livre>
+<titre>Nedjma</titre>
+<auteur>Kateb Yacine</auteur>
+<nb_tomes>1</nb_tomes>
+</livre>
+
+<livre>
+<titre>L'Assomoir</titre>
+<auteur>Emile Zola</auteur>
+</livre>
+
+<livre lang="en">
+<titre>David Copperfield</titre>
+<auteur>Charles Copperfield</auteur>
+</livre>
+
+</biblio>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<?xml-stylesheet type="text/css" href="Liv.css"?>
+<livre>
+  <titre>The Book: The Ultimate Guide to Rebuilding Civilization</titre>
+  <auteurs>
+      <auteur>
+        <nom>Weinersmith</nom>
+        <prenom>Zach</prenom>
+      </auteur>
+
+      <auteur>
+        <nom>Hungry</nom>
+        <prenom>Minds</prenom>
+      </auteur>  
+  </auteurs>
+  <chapitre number="1">
+    <titre>Foundations of Civilization</titre>
+    <section number="01">
+      <titre>Knowledge Preservation</titre>
+      <paragraphe>
+        This section explains the importance of preserving human knowledge for future generations. 
+      </paragraphe>
+    </section>
+
+    <section number="02">
+      <titre>Basic Scientific Principles</titre>
+      <paragraphe>
+        An overview of essential scientific concepts required to rebuild technology and society. 
+      </paragraphe>
+    </section>
+  </chapitre>
+
+  <chapitre number="2">
+    <titre>Rebuilding Society</titre>
+    <section number="01">
+     <titre>Agriculture and Food</titre>
+      <paragraphe>
+        Techniques for sustainable farming and food production.
+      </paragraphe>
+    </section>
+
+    <section number="02">
+      <titre>Engineering and Tools</titre>
+      <paragraphe>
+        Fundamental engineering knowledge needed to create tools and infrastructure.
+      </paragraphe>
+    </section>
+  </chapitre>
+</livre>

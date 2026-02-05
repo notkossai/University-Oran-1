@@ -1,0 +1,93 @@
+/* ========= Global ========= */
+livre {
+  display: block;
+  font-family: "Georgia", serif;
+  margin: 40px;
+  line-height: 1.6;
+  color: #222;  /*Gris foncé*/
+  counter-reset: chap; /*Crée un compteur de chapitres*/
+}
+
+/* ========= Titre du Livre ========= */
+livre > titre {
+  display: block;
+  font-size: 32px;
+  font-weight: bold;
+  color: #b30000;  /*Rouje foncé*/
+  margin-bottom: 20px;
+}
+
+/* ========= Auteurs ========= */
+auteurs {
+  display: block;
+  margin-bottom: 30px;
+  padding-left: 0;
+}
+
+auteurs::before {
+  content: "Authors";
+  display: block;
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+auteur {
+  display: list-item; 
+  margin-left: 25px;
+  margin-bottom: 4px;
+}
+
+/* ========= Chapitres ========= */
+chapitre { counter-increment: chap; counter-reset: sec; }
+chapitre {
+  display: block;
+  margin-top: 30px;
+}
+
+chapitre > titre {
+  display: block;
+  font-size: 24px;
+  font-weight: normal;
+  font-style: italic;          
+  padding-bottom: 6px;
+  border-bottom: 2px solid #ddd;  /*Grainsboro*/
+  margin-bottom: 14px;
+}
+
+chapitre > titre::before {
+  content: "Chapitre " counter(chap, decimal) " : "; /*Afficher le num du chapitre*/
+  font-weight: bold;
+  font-style: normal;          
+}
+
+/* ========= Sections ========= */
+section { counter-increment: sec; }
+section {
+  display: block;
+  margin-left: 20px;
+  margin-bottom: 16px;
+}
+
+section > titre {
+  display: block;
+  font-size: 18px;
+  font-weight: normal;
+  font-style: normal;          
+  margin-bottom: 6px;
+  color: #444;  /*Gris*/
+}
+
+section > titre::before {
+  content: "Section " counter(sec, decimal-leading-zero) " : "; /*Afficher le num de section*/
+  font-weight: bold;
+  font-style: normal;
+}
+
+/* ========= Paragraphes ========= */
+paragraphe {
+  display: block;
+  margin-left: 20px;
+  text-align: justify;
+}
+
