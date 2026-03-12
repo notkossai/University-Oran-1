@@ -1,0 +1,29 @@
+● ?- 2 = 1+1. → (false) : 
+'=' fait une unification (comparaison de termes) et '2' n’est pas le même terme que '1+1'. 
+
+● ?- 2 is 1+1. → (true) : 
+'is' évalue l’expression arithmétique et 1+1 = 2. 
+
+● ?- X = 2, X = 1+1. → (false) : 
+'X' devient '2', puis Prolog vérifie '2 = 1+1', ce qui échoue. 
+
+● ?- X is 3+4. → (X = 7) : 
+'is' calcule l’expression 3+4. 
+
+● ?- X = 5, X is 3+3. → (false) : 
+'X' est déjà '5', mais 3+3 = 6, donc '5' is '6' est faux. 
+
+● ?- X = 5 ; X is 3+3. → (X = 5 ; X = 6) : 
+';' signifie OU, donc Prolog donne deux solutions. 
+
+● ?- N is 5, L is N+1. → (N = 5, L = 6) : 
+'is' calcule les expressions successivement. 
+
+● ?- N is 5 , L is N+1 , Res = N + L. → (N = 5, L = 6, Res = 5+6) : 
+'=' n’effectue pas de calcul, il unifie avec le terme '5+6'. 
+
+● ?- N is 5 , L is N+1 , Res is N+L. → (N = 5, L = 6, Res = 11) : 
+'is' calcule 5+6. 
+
+● ?- N is 5 , L is N*(N+1)/2. → (N = 5, L = 15) : 
+l’expression mathématique est évaluée (5*(5+1)/2 = 15).
