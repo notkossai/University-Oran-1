@@ -1,0 +1,12 @@
+write('bonjour'), write('a toi').
+
+write('bonjour'), nl, write('a toi').
+
+X is 2, write(X).
+
+Quelle est la différence entre write et nl?
+ *write: afficher
+ *nl: saut de ligne
+
+Que fait l'opérateur 'is'?
+ 
